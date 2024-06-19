@@ -8,6 +8,7 @@ def sorted_squared(array):
     Returns:
         list: A new list containing the squares of the numbers in the input array, sorted in non-decreasing order.
     """
+    n = len(array)
     # Create a new list to store the squared and sorted values
     squared_sorted = [0] * len(array)
 
@@ -16,7 +17,7 @@ def sorted_squared(array):
     end = len(array) - 1
 
     # Iterate from the end of the array
-    for i in range(len(array) - 1, -1, -1):
+    for i in reversed(range(n)):
         # Compare the absolute values of the elements at the start and end pointers
         if abs(array[start]) > abs(array[end]):
             # Square the value at the start pointer and store it in the result array
