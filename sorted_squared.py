@@ -1,6 +1,6 @@
 def sorted_squared(array):
     """
-    Sorts the squared values of the input array in ascending order.
+    Sorts the squared values of the input array in ascending order. Time complexity = O(n**2)
 
     Args:
         array (list): A list of integers.
